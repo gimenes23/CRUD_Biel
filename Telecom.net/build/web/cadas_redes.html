@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+ Author     : Mateus Gimenes 11221103419
+-->
+<html>
+    <head>
+        <title>TELECOM.nets</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            
+            .botao{
+                 margin: 10px 0;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 19px;
+                background-color: #6a80ff;
+                color:white;
+
+            }
+            
+            .contai {           
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+            }
+              </style>
+    </head>
+    <body class="contai">
+        <img src="./img/logo.png" alt="" width="300" height="200"/>
+        <form name="FormCadastro"  method="post" action="cadas_redes.jsp">
+            
+            
+            Nome do cliente: <input type="text" name="nome_c"> <p>
+                
+            Plano de assinatura:     
+                <input type="radio" name="plano" value="2,4GHz 100R$">
+                <label>2,4GHz 100R$ </label>
+                <input type="radio" name="plano" value="5GHz 180R$">
+                <label >5GHz 180R$</label>
+                <input type="radio" name="plano" value="Plano Familia 200R$">
+                <label > Plano Familia 200R$ </label> <p>
+
+            IP da rede: <input type="text" name="ip"> <p>
+            Endereço: <input type="text" name="end_c"> <p>
+            Contato do cliente: <input type="text" name="contato_c"> <p>
+            Quantas pessoas irem utilizar a rede?: <input type="text" name="quant_util"> <p>
+                
+            <label>Data da mensalidade:</label>
+            <input type="date" name="data_mensal"> 
+            <br><br>
+            <input class="botao" type="submit" value="Salvar" name="salvar">
+            <input class="botao" type="reset" value="Limpar">
+             
+             <p>                   
+            
+        </form>
+        
+        
+    </body>
+</html>
